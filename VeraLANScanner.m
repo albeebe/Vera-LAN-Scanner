@@ -141,8 +141,10 @@
     if (_unverifiedVeras.count == 0) {
         // We're finished discovering devices
         if (finishedBlock) finishedBlock(nil);
-        finishedBlock = nil;
     }
+    
+    finishedBlock = nil;
+    discoveredBlock = nil;
 }
 
 
